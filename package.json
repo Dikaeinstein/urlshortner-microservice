@@ -1,0 +1,22 @@
+{
+  "name": "urlshortner-microservice",
+  "version": "1.0.0",
+  "description": "Url shortner microservice",
+  "main": "index.js",
+  "author": "Dikaeinstein",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server.js",
+    "prestart": "babel src -d dist",
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "url-regex": "^4.1.1"
+  }
+}
